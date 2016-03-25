@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>UI</title>
+    <link rel="stylesheet" href="./style/weui.css"/>
+    <link rel="stylesheet" href="./home.css"/>
+</head>
+<body ontouchstart>
+    <div class="container js_container">
+
+    </div>
+    <script type="text/html" id="tpl_home">
+<div class="page">
+    <div class="hd">
+        <h3 class="page_title">乱弹设计</h3>
+    </div>
+    <div class="bd">
+        <div class="weui_grids">
+            <a href="javascript:;" class="weui_grid js_grid" data-id="Mary">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    超级玛丽和云计算
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="GoneWind">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_cell.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    飘起来
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="OnionEgg">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_toast.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    洋葱炒蛋
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="page_mary">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">超级玛丽和云计算</h1>
+    </div>
+    <div class="bd">
+    <div class="weui_panel weui_panel_access">
+        <div class="weui_panel_hd">关键点</div>
+        <div class="weui_panel_bd">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="./images/mushroom_mary.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">超级玛丽和KOF模拟器</h4>
+                    <p class="weui_media_desc">游戏代码知道自己的运行环境吗？</p>
+                </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="./images/Lua_Logo_32x32.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">Lua Javascript python Java </h4>
+                    <p class="weui_media_desc">这些语言有什么共性</p>
+                </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="./images/VMware-icon.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">Vmware virtual box </h4>
+                    <p class="weui_media_desc">被运行的操作系统知道自己的运行环境吗?</p>
+                </div>
+            </a>
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="./images/cloud-icon.png" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">Cloud VPS </h4>
+                    <p class="weui_media_desc">你们考虑过这些主机的心理感受吗?</p>
+                </div>
+            </a>            
+        </div>
+        <div class="bd spacing">
+            <a href="javascript:;" class="weui_btn weui_btn_plain_primary" id="showDialog2">核心思想</a>
+        </div>
+        <div class="weui_dialog_alert" id="dialog2" style="display: none;">
+            <div class="weui_mask"></div>
+            <div class="weui_dialog">
+                <div class="weui_dialog_hd"><strong class="weui_dialog_title">核心思想</strong></div>
+                <div class="weui_dialog_bd">隔离，抽象，飘着的，不是原生native的</div>
+                <div class="weui_dialog_ft">
+                    <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="page_gonewind">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">飘起来</h1>
+    </div>
+    <div><p>装修中，敬请期待</p></div>
+</div>
+
+</script>
+
+<script type="text/html" id="page_onionegg">
+<div class="page">
+    <div class="hd">
+        <h1 class="page_title">西红柿炒蛋</h1>
+    </div>
+    <div><p>装修中，敬请期待</p></div>
+</div>
+
+</script>
+
+<script src="./zepto.min.js"></script>
+<script src="./page_manager.js"></script>
+
+</body>
+</html>
