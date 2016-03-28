@@ -164,7 +164,12 @@ $(function () {
                         $dialog.hide();
                     });
                 }
-            }
+            },
+            '#perfect_arch': {
+                click: function (e) {
+                    pageManager.go("PerfectArch");
+                }
+            }            
         }        
     };
     var page_gonewind = {
@@ -176,11 +181,18 @@ $(function () {
         name: 'OnionEgg',
         url: '#OnionEgg',
         html: '#page_onionegg'
-    };    
+    };
+    var page_perfectarch = {
+        name: 'PerfectArch',
+        url: '#PerfectArch',
+        html: '#page_perfectarch'
+    };
+
     pageManager.push(page_home)
         .push(page_mary)
         .push(page_gonewind)
         .push(page_onionegg)
+        .push(page_perfectarch)
         .setDefault('home')
         .init();
 });
