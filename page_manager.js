@@ -182,6 +182,11 @@ $(function () {
         url: '#OnionEgg',
         html: '#page_onionegg'
     };
+    var page_article = {
+        name: 'Article',
+        url: '#Article',
+        html: '#page_article'
+    };    
     var page_perfectarch = {
         name: 'PerfectArch',
         url: '#PerfectArch',
@@ -193,6 +198,7 @@ $(function () {
         .push(page_gonewind)
         .push(page_onionegg)
         .push(page_perfectarch)
+        .push(page_article)
         .setDefault('home')
         .init();
 });
